@@ -27,12 +27,12 @@ project:
   date: 2025-16-05
   toc:
     - file: index.md
-    - file: notebooks/notebook.ipynb
+    - file: notebooks/create_virtualzarr.ipynb
   exports:
     - format: pdf
       template: curvenote
-      article: notebooks/notebook.ipynb
-      output: exports/notebook.pdf
+      article: notebooks/create_virtualzarr.ipynb
+      output: exports/create_virtualzarr.pdf
     - format: cff
       type: software
       version: v2.0.0
