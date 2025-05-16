@@ -1,0 +1,48 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+extends:
+  - https://raw.githubusercontent.com/FAIR2Adapt/fair2adapt-helpdesk/main/fair2adapt.yml
+project:
+  id: ea3ac578-ab0a-47c8-a10a-9d06678a9450
+  title: RiOMar Project – Coastal Water Quality Anticipation to manage coastal zone ecosystem responses for biodiversity conservation
+  short_title: Biscayan RiOMar
+  abstract: Notebooks developed for supporting RiOMar stakeholders.
+  subject: riomar
+  keywords:
+    - water quality
+    - Modelling
+    - coastal zone
+    - Python
+  thumbnail: static/thumbnail.png
+  requirements:
+    - environment.yml
+  github: https://github.com/FAIR2Adapt/biscayan-riomar
+  jupyter:
+    binder:
+      repo: FAIR2Adapt/biscayan-riomar
+  open_access: true
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  date: 2025-16-05
+  toc:
+    - file: index.md
+    - file: notebooks/create_virtualzarr.ipynb
+  exports:
+    - format: pdf
+      template: curvenote
+      article: notebooks/create_virtualzarr.ipynb
+      output: exports/notebook.pdf
+    - format: cff
+      type: software
+      version: v2.0.0
+      license: MIT
+      license-url: https://opensource.org/license/MIT
+  bibliography:
+    - references.bib
+
+site:
+  template: book-theme
+  options:
+    hide_toc: true
+    logo: static/logo.png
