@@ -27,7 +27,7 @@ project:
   date: 2025-05-16
   toc:
     - file: index.md
-    - file: notebooks/create_virtualzarr.ipynb
+    - file: notebooks/egi_datahub_zarr_examples.ipynb
   exports:
     - format: pdf
       template: curvenote

@@ -19,4 +19,7 @@ dependencies:
   - pytest-cov
   - jupyter
   - mystmd
-  - nodejs=18  # For mystmd CLI
+  - nodejs=18  # For mystmd CLI  
+  - pip
+  - pip:
+      - fs.onedatarestfs
