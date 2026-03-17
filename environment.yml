@@ -1,9 +1,9 @@
-name: myenv
+name: riomar-env
 channels:
   - conda-forge
   - nodefaults
 dependencies:
-  - python=3.11
+  - python=3.13
   - numpy
   - xarray
   - zarr
@@ -19,7 +19,15 @@ dependencies:
   - pytest-cov
   - jupyter
   - mystmd
-  - nodejs=18  # For mystmd CLI  
+  - nodejs=18  # For mystmd CLI
   - pip
+  - matplotlib
+  - cartopy
+  - dask
+  - panel
+  - hvplot
+  - geoviews
   - pip:
       - fs.onedatarestfs
+      - healpix-geo
+      - git+https://github.com/EOPF-DGGS/healpix-plot.git
